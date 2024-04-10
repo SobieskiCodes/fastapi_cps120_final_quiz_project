@@ -1,19 +1,46 @@
-<head>
-    <title>{{ title }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='main.css') }}">
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiple Choice Quiz</title>
+    <link rel="stylesheet" href="/static/css/style.css">
+</head>
 <body>
-    <div class="App">
-        <header class="App-header">
-            <img src="{{ url_for('static', filename='Octocat.png') }}" class="App-logo" alt="logo" />
-            <p>
-                GitHub Codespaces <span class="heart">♥️</span> Flask
-            </p>
-            <p class="small">
-                Edit <code>templates/index.html</code> and refresh to see your changes!
-            </p>
-        </header>
+    <div class="quiz-container">
+        <h2>Multiple Choice Quiz</h2>
+        <form id="quiz-form">
+            <div class="question">
+                <p>Question 1: What is the capital of France?</p>
+                <label for="q1a"><input type="radio" id="q1a" name="q1" value="a"> Paris</label><br>
+                <label for="q1b"><input type="radio" id="q1b" name="q1" value="b"> Rome</label><br>
+                <label for="q1c"><input type="radio" id="q1c" name="q1" value="c"> Berlin</label><br>
+                <label for="q1d"><input type="radio" id="q1d" name="q1" value="d"> London</label>
+            </div>
+            <div class="question">
+                <p>Question 2: What is the chemical symbol for water?</p>
+                <label for="q2a"><input type="radio" id="q2a" name="q2" value="a"> H2O</label><br>
+                <label for="q2b"><input type="radio" id="q2b" name="q2" value="b"> CO2</label><br>
+                <label for="q2c"><input type="radio" id="q2c" name="q2" value="c"> NaCl</label><br>
+                <label for="q2d"><input type="radio" id="q2d" name="q2" value="d"> O2</label>
+            </div>
+            <div class="question">
+                <p>Question 3: Who wrote "Romeo and Juliet"?</p>
+                <label for="q3a"><input type="radio" id="q3a" name="q3" value="a"> William Shakespeare</label><br>
+                <label for="q3b"><input type="radio" id="q3b" name="q3" value="b"> Jane Austen</label><br>
+                <label for="q3c"><input type="radio" id="q3c" name="q3" value="c"> Charles Dickens</label><br>
+                <label for="q3d"><input type="radio" id="q3d" name="q3" value="d"> J.K. Rowling</label>
+            </div>
+            <div class="question">
+                <p>Question 4: What is the largest ocean on Earth?</p>
+                <label for="q4a"><input type="radio" id="q4a" name="q4" value="a"> Atlantic Ocean</label><br>
+                <label for="q4b"><input type="radio" id="q4b" name="q4" value="b"> Indian Ocean</label><br>
+                <label for="q4c"><input type="radio" id="q4c" name="q4" value="c"> Southern Ocean</label><br>
+                <label for="q4d"><input type="radio" id="q4d" name="q4" value="d"> Pacific Ocean</label>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
     </div>
 </body>
-
 </html>
