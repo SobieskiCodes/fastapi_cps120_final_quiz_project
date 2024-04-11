@@ -48,4 +48,5 @@ async def submit_quiz(request: Request):
 
     result = f"You got {score} out of {len(quiz_data['quiz'])} questions right."
     # i think i'd rather pop up or highlight the correct answers / questions vs a new page, but its a lot of work / javascript
-    return templates.TemplateResponse("result.html", {"request": request, "result": result})
+    #return templates.TemplateResponse("result.html", {"request": request, "result": result})
+    return result

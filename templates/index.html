@@ -20,6 +20,7 @@
             {% endfor %}
             <button type="submit">Submit</button>
         </form>
+        <div class="result" value="empty"></div>
     </div>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
@@ -36,8 +37,10 @@
                         body: formData
                     });
                     const result = await response.text();
-                    document.body.innerHTML = result;
-                    // we update it here but it doesn't exist on the page yet - i think we skip the other page.
+                    const quizResultContainer = document.querySelector('.result');
+                    quizResultContainer.innerHTML = result;
+                    // needs some tlc but it works lol - then we can do highlighting etc with a for loop. 
+                    // if wrong, red - else green or something.
                 }
             });
         });
