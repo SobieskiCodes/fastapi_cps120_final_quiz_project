@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Multiple Choice Quiz</title>
-    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/style.css">   
 </head>
 <body>
     <div class="quiz-container">
@@ -14,12 +14,34 @@
             <div class="question">
                 <p>{{ question.question }}</p>
                 {% for option in question.options %}
-                <label for="{{ question.id }}{{ option }}"><input type="radio" id="{{ question.id }}{{ option }}" name="{{ question.id }}" value="{{ option }}">{{ option }}</label><br>
+                <label for="{{ question.id }}{{ option }}"><input type="radio" id="{{ question.id }}{{ option }}" name="{{ question.question }}" value="{{ option }}">{{ option }}</label><br>
                 {% endfor %}
             </div>
             {% endfor %}
             <button type="submit">Submit</button>
         </form>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            //console.log('document is ready.');
+            const quizContainer = document.querySelector('.quiz-container');
+            quizContainer.addEventListener('submit', async function(event) {
+                if (event.target && event.target.id === 'quiz-form') {
+                    event.preventDefault();
+                    //console.log('Form submitted');
+                    const formData = new FormData(event.target);
+                    //console.log([...formData.entries()])
+                    const response = await fetch('/submit_quiz', {
+                        method: 'POST',
+                        body: formData
+                    });
+                    const result = await response.text();
+                    document.body.innerHTML = result;
+                    // we update it here but it doesn't exist on the page yet - i think we skip the other page.
+                }
+            });
+        });
+    </script>
+    
 </body>
 </html>
