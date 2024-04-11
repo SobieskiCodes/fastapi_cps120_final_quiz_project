@@ -1,13 +1,48 @@
-# GitHub Codespaces ♥️ Flask
+# CPS 120 Class Project: Multiple-Choice Quiz
 
-Welcome to your shiny new Codespace running Flask! We've got everything fired up and running for you to explore Flask.
+This project is our rendition for CPS 120, aimed at showcasing our learning throughout the semester. It features a multiple-choice quiz that dynamically loads questions from a local JSON file and randomizes answer options.
 
-You've got a blank canvas to work on from a git perspective as well. There's a single initial commit with the what you're seeing right now - where you go from here is up to you!
+## Installation:
 
-Everything you do here is contained within this one codespace. There is no repository on GitHub yet. If and when you’re ready you can click "Publish Branch" and we’ll create your repository and push up your project. If you were just exploring then and have no further need for this code then you can simply delete your codespace and it's gone forever.
+1. Clone this repository:
 
-To run this application:
+   ```
+   git clone <repository-url>
+   ```
 
-```
-flask --debug run
-```
+2. Navigate to the project directory and install dependencies:
+
+   ```
+   pip install -r requirements.txt
+   ```
+
+3. Run the application using FastAPI:
+
+   ```
+   python -m uvicorn main:app --reload
+   ```
+
+4. Open your browser and go to http://127.0.0.1:8000 to access the quiz.
+
+## Technologies Used:
+
+- **Framework:** FastAPI
+- **Data Format:** JSON
+- **Dependencies:** Check `requirements.txt` for details.
+
+## Contributors:
+
+- Kasey
+- Gloria
+- Marshall
+- Justin
+
+## How to Use:
+
+- Start the quiz by accessing the provided URL.
+- Answer the questions and submit your responses.
+- View your score at the end of the quiz.
+
+## Contributing:
+
+We welcome contributions to enhance this quiz or add new features. Fork the repository, make your changes, and submit a pull request.
