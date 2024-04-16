@@ -19,10 +19,17 @@ This project is our rendition for CPS 120, aimed at showcasing our learning thro
 3. Run the application using FastAPI:
 
    ```
-   python -m uvicorn main:app --reload
+   python -m uvicorn main:app --host 0.0.0.0 --reload
    ```
 
-4. Open your browser and go to http://127.0.0.1:8000 to access the quiz.
+4. Open your browser and go to http://0.0.0.0:8000 to access the quiz.
+
+or 
+
+[![Repl.it](https://img.shields.io/badge/Repl.it-1C2333?style=for-the-badge&logo=replit&logoColor=orange)](https://replit.com/@SobieskiCodes/fastapicps120finalquizproject)
+
+Open the Repl.it and run it.
+
 
 ## Technologies Used:
 
