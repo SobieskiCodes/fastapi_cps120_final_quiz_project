@@ -1,3 +1,12 @@
+#===========================================================
+#
+#  Title:       Multiple Choice Quiz
+#  Author(s):   Marshall Blaser, Gloria Yarandi, Kasey Garant, Justin Sobieski
+#  Date:        4/15/2024
+#  Description:
+#       A quick example of how to make a multiple choice quiz
+#       using FastAPI and Jinja2Templates with python.
+#===========================================================
 import json
 import pathlib
 from fastapi import FastAPI, Request
