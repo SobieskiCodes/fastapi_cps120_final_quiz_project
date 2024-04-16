@@ -29,7 +29,86 @@
           "Hippopotamus"
         ],
         "answer": "Blue Whale"
-      }
-    ]
+      },
+      {
+        "question": "Who is the most beloved character from Author Sarah J Mass's best-selling series, 'Throne of Glass'?",
+        "options": [
+          "Aelin Gakathynius",
+          "Rowan Whitehorn",
+          "Lysandra Ashryver",
+          "Manon Blackbeak"
+         ],
+         "answer": "Manon Blackbeak"
+         },
+         {
+         "question": "Who protected the future Hunters from being mutilated by the horrors of the Fishing Hamlet, as well as protecting the Fishing Hamlet from gaining more nightmarish monstrosities?",
+         "options": [
+           "Sister Frieda and Alfather Ariandel",
+           "Melania, Goddess of Rot",
+           "Lady Maria of the Astral Clocktower",
+           "Dark Sun Gwyndolin"
+         ],
+         "answer": "Lady Maria of the Astral Clocktower"
+         },
+         {
+           "question": "Who was the first Hollow to receive their own Lord Soul, creating the Kingdom of Lordran and bringing upon the Age of Light?",
+           "options": [
+             "Gwynevere, Sunlight Princess",
+             "Dark Sun Gwyndolin",
+             "Gwyn, Lord of Sunlight",
+             "SunBro Solaire of Astora"
+           ],
+           "answer": "Gwyn, Lord of Sunlight" 
+           },
+         {
+           "question": "Which of the following temperatures are generally suitable for most dwarf shrimp species in an aquarium?",
+           "options": [
+             "60-70f",
+             "70-80f",
+             "80-90f",
+             "over 100f"
+           ],
+           "answer": "70-80f" 
+           },
+         {
+           "question": "What is the size of a typical dwarf shrimp?",
+           "options": [
+             "under 1 inch",
+             "2-5 inches",
+             "5-10 inches",
+             "over 10 inches"
+           ],
+           "answer": "2-5 inches" 
+           },
+           {
+           "question": "Modern neuroscience started in the early 1900s. Which researcher is widely considered to be the founder of the field?",
+           "options": [
+             "Santiago Ramón y Cajal",
+             "Albert Einstein",
+             "Sir Isaac Newton",
+             "Nicolaus Copernicus"
+            ],
+            "answer": "Santiago Ramón y Cajal"
+            },
+            {
+            "question": "Approximately how many neurons do we have in our brain?",
+            "options": [
+            "5 million",
+            "1 trillion",
+            "86 billion",
+            "150 thousand"
+           ],
+           "answer": "86 billion"
+           },
+           {
+           "question": "What is the greek god/goddess of the Sun?",
+           "options": [
+             "Zeus",
+             "Apollo",
+             "Aphrodite",
+             "Ares"
+            ],
+            "answer": "Apollo"
+            }
+            ]
   }
-  
